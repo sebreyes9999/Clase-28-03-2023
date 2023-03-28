@@ -1,0 +1,387 @@
+/*
+Paleta de colores
+#A60815, #BF0F30, #F2F2F2, #402319, #D0ADA0
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    height: 100vh;/*100% o 100vh es lo mismo*/
+}
+
+.container_header{
+    width: 100%;
+    height: 41%;/*si es porcentaje hay que colocar vh para que funcione con el resto de etiquetas */
+    background: #402319;
+    background-image: linear-gradient(10deg,#4023198a,#A60815ab,#F2F2F225),url(../img/pexels-pixabay.jpg);
+    background-repeat: no-repeat;/*Para que no se repita la imagen*/
+    background-size: cover;/*par aque la pagina adapte la imagen en el fondo*/
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0.1px;/*para terminar de rellenar espacios es blanco*/
+
+}
+
+.menu{
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+.menu a{
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+hr{
+    border-color: #4023197e;
+}
+
+.menu > li{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #A60815;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    color: #F2F2F2;
+    font-size: 22px;
+}
+
+.menu > li:hover{
+    background-color: #BF0F30;
+    border: 2px solid #402319;
+}
+
+.menu .btn_contacto{
+    background-color: #BF0F30;
+}
+
+.title{
+    text-align: center;
+    font-size: 4em;
+    margin-top: 1%;
+    color: #F2F2F2;
+}
+
+.fm_contact{
+    width: 45%;
+    height: auto;
+    margin: 2% auto;
+    border: 5px solid #191b40;
+    border-radius: 10px;
+    padding: 2% 1%;
+    text-align: center;
+}
+
+.fm_contact > hr{
+    margin-bottom: 3%;
+
+}
+
+.title_form{
+    margin: 2% 0;
+    text-align: center;
+    color: #A60815;
+}
+
+.fm_contact > input,label,button{
+    display: inline-block;
+    width: 80%;
+    margin: 1% 0;
+    font-size: 22px;
+}
+
+.fm_contact > input,.msn{
+    padding: 10px 2px;
+    border: none;
+    border-bottom: 2px solid #402319;
+    outline: none;
+    background-color: #fce3e371;
+}
+
+.msn{
+    width: 80%;
+}
+
+.fm_contact > label{
+    text-align: left;
+    padding: 5px;
+}
+
+input:focus, .msn:focus{
+    border-bottom: none;
+    border-right: 2px solid #402319;
+    background: #1f1d1d25;
+}
+
+.btn_enviar, .btnRegistrar, .btnCancelar{
+    width: 30%;
+    margin-top: 3%;
+    padding: 10px 20px;
+    background: #A60815;
+    border-radius: 10px;
+    font-size: 20px;
+    border: solid #402319 2px;
+    color: #F2F2F2;
+}
+
+.btn_enviar:hover{
+    background-color: #BF0F30;
+    text-decoration: underline;
+}
+
+.footer{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    background-image: linear-gradient(10deg,#402319,#bf0f30,#a60815 60% );
+}
+
+.foot{
+    display: inline;
+    margin: 3%;
+    text-align: center;
+}
+
+.copy{
+    width: 30%;
+    height: auto;
+    color: #F2F2F2;
+    line-height: 40px;
+}
+
+.my_nets, .map{
+    width: 30%;
+    height: auto;
+}
+
+.title_about,.title_nets,.title_ubi{
+    color: #F2F2F2;
+    margin-bottom: 3%;
+    padding: 1%;
+}
+
+.social_net > li{
+    padding: 1%;
+
+}
+
+.nets{
+    width: 8%;
+}
+
+.foot > iframe{
+    width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.credits{
+    width: 100vw;
+    padding: 2%;
+    background-color: #402319;
+    text-align: right;
+    color: #F2F2F2;
+}
+
+.credits > a{
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.card{
+    width: 60%; 
+    margin: 5% auto; 
+    border: 2px solid red; 
+    background-color: black; 
+    text-align: center;  
+}
+
+.title-card{
+    font-size: 24px;
+    color: red;
+    padding: 2%;
+}
+
+.data-card, .text-mail, .text-msn{ 
+    font-size: 20px; 
+    color: red; 
+    padding: 1% 0; 
+} 
+
+.text-telefono{ 
+    font-size: 22px;
+    color: red;
+    padding: 2% 0;
+}
+
+.btnRegistrar:hover, .btnCancelar:hover{
+    background: #BF0F30; 
+    text-decoration:underline;
+}
+
+.alerta{
+    width: 30%;
+    height: auto; 
+    background: #BF0F30; 
+    position: fixed;
+    top: calc(100vh - 65%);
+    left: calc(100vw - 65%);
+    text-align: center;
+    border: 2px solid #402319;
+    padding: 5px;
+}
+
+.textAlerta{
+    width: 100%; 
+    margin-top: 12%;
+    margin-bottom: 10%;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.btnAlerta{
+    width: 40%;
+    height: auto;
+    margin-right: 1% ;
+    margin-bottom: 3%;
+    background: #402319;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #F2F2F2;
+    padding: 2%;
+}
+
+/*Estilo de validación*/
+.is-valid{
+    border-bottom: 2px solid #0fc537 !important;
+}
+.is-invalid{
+    border-bottom: 2px solid #d40a0a !important;
+}
+
+/*Medias query*/
+@media (min-width: 768px) and (max-width: 1000px){/*para trabajar tamaños de pantalla*/
+    .menu > li{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 3.5em;
+    }
+    .fm_contact{
+        width: 70%;
+    }
+    .container_header{
+        height: 25%;
+    }
+} 
+
+@media (min-width: 680px) and (max-width: 768px){
+    .menu{
+        padding: 3%;
+    }
+    .menu > li{
+        font-size: 18px;
+        margin-bottom: 1.5%;
+    }
+    .title{
+        font-size: 3.0em;
+        margin-top: 2.0%;
+    }
+    .fm_contact{
+        width: 75%;
+    }
+    .btn_enviar, .btnRegistrar, .btnCancelar{
+        width: 35%;
+        margin-top: 2.0%;
+        padding: 8px 18px;
+        font-size: 18px;
+    }
+    .container_header{
+        height: 20%;
+    }
+}
+
+@media (min-width: 580px) and (max-width: 679px){
+    .menu > li{
+        font-size: 15px;
+        padding: 2%;
+    }
+    .title{
+        font-size: 2.5em;
+        margin-top: 2.5%;
+    }
+    .fm_contact{
+        width: 80%;
+        height: auto;
+        margin: 2% auto;
+        border: 3.5px solid ;
+        border-radius: 8px;
+    }
+    .fm_contact > input,label,button{
+        font-size: 21px;
+    }
+    .btn_enviar, .btnRegistrar, .btnCancelar{
+        width: 40%;
+        margin-top: 2.0%;
+    }
+    .container_header{
+        height: 20%;
+    }
+    .copy{
+        line-height: 30px;
+    }
+}
+@media (min-width: 300px) and (max-width: 580px){
+    .title{
+        font-size: 3.5em;
+        margin-top: 2.5%;
+    }
+    .menu{
+        text-align: right;
+        margin: 2%;
+    }
+    .menu > li{
+        display: block;
+        text-align: center;
+        padding: 1%;
+    }
+    .fm_contact{
+        width: 85%;
+        border: 3px solid;
+    }
+    .fm_contact > input,label,button{
+        font-size: 20px;
+    }
+    .btn_enviar, .btnRegistrar, .btnCancelar{
+        width: 45%;
+        margin-top: 2.5%;
+    }
+    .container_header{
+        height: 26%;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+    }
+    .foot > iframe{
+        width: 90%;
+    }
+    .credits{
+        height: auto;
+        padding: 2%;
+    }
+
+}
